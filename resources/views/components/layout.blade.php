@@ -6,6 +6,15 @@
 
         <title>{{ config('app.name') }}</title>
 
+        <script
+            async
+            src="https://u.gummibeer.dev/script.js"
+            data-website-id="3515b65a-2535-429c-b9d6-d1604b810f89"
+            data-domains="sukuro.app"
+            data-exclude-search="true"
+            data-exclude-hash="true"
+        ></script>
+
         @vite('resources/css/app.css')
         @livewireStyles
     </head>

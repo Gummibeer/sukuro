@@ -18,7 +18,11 @@
             </p>
 
             <div class="mb-12 relative">
-                <a href="{{ route('new') }}" class="inline-block bg-gradient-to-r from-green-600 to-lime-600 hover:from-green-700 hover:to-lime-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                <a
+                    href="{{ route('new') }}"
+                    class="inline-block bg-gradient-to-r from-green-600 to-lime-600 hover:from-green-700 hover:to-lime-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                    data-umami-event="New Game Button"
+                >
                     Start New Game
                 </a>
             </div>
