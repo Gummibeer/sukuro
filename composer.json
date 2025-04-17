@@ -4,15 +4,18 @@
     "license": "proprietary",
     "type": "project",
     "keywords": [],
+    "homepage": "https://sukuro.app",
     "require": {
         "php": "^8.2",
-        "laravel/framework": "^12.8.1",
-        "livewire/livewire": "^3.6.2"
+        "assada/laravel-achievements": "^2.8",
+        "laravel/framework": "^12.9.2",
+        "livewire/livewire": "^3.6.3",
+        "owenvoke/blade-fontawesome": "^2.9"
     },
     "require-dev": {
         "laravel/pint": "^1.22",
         "nunomaduro/collision": "^8.8",
-        "spatie/laravel-ray": "^1.40"
+        "spatie/laravel-ray": "^1.40.2"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
@@ -57,10 +60,6 @@
             "@php artisan key:generate --ansi",
             "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
             "@php artisan migrate --graceful --ansi"
-        ],
-        "dev": [
-            "Composer\\Config::disableProcessTimeout",
-            "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite"
         ],
         "fix": "@php vendor/bin/pint"
     },
