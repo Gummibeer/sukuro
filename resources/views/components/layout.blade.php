@@ -19,6 +19,8 @@
         @livewireStyles
     </head>
     <body class="font-sans relative flex p-4 items-center justify-center min-h-screen flex-col">
+        <x-header :user="auth()->user()" />
+
         {!! $slot !!}
 
         <a href="https://github.com/Gummibeer/sukuro" aria-label="View source on GitHub">

@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Config;
+use App\Events\PuzzleSolved;
 use App\Sukuro;
 use Illuminate\Contracts\View\View as ViewContract;
 use Livewire\Component;
@@ -45,6 +46,10 @@ class Game extends Component
         $this->select($row, $col);
 
         $this->solved = $this->isSolved();
+
+        if ($this->solved) {
+            event(new PuzzleSolved($this->sukuro()));
+        }
     }
 
     public function hide(int $row, int $col): void

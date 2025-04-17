@@ -9,8 +9,10 @@
         "php": "^8.2",
         "assada/laravel-achievements": "^2.8",
         "laravel/framework": "^12.9.2",
+        "laravel/socialite": "^5.19",
         "livewire/livewire": "^3.6.3",
-        "owenvoke/blade-fontawesome": "^2.9"
+        "owenvoke/blade-fontawesome": "^2.9.1",
+        "socialiteproviders/discord": "^4.2"
     },
     "require-dev": {
         "laravel/pint": "^1.22",
